@@ -9,3 +9,11 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(131, 76, 242);
+  font-family: sans-serif;
+}
