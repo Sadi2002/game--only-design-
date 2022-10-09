@@ -90,6 +90,17 @@ body {
   font-weight: bold;
 }
 
+.board-circle {
+  width: 4rem;
+  height: 4rem;
+  background-color: #834cf2;
+  border-radius: 50%;
+  border: 3px solid #000;
+  -webkit-box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.9);
+          box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.9);
+  margin-bottom: 0.5rem;
+}
+
 @media screen and (min-width: 1920px) {
   .button-header {
     height: 4.5rem;
@@ -103,7 +114,7 @@ body {
 
 .container {
   width: 100%;
-  padding: 4rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .container__header {
@@ -360,5 +371,33 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.container__board {
+  width: 100%;
+  background-color: #ececec;
+  padding: 1rem 0.2rem 2.5rem;
+  height: 33rem;
+  border-radius: 2rem;
+  border: 3px solid #000;
+  -webkit-box-shadow: 0 7px 0 rgba(0, 0, 0, 0.9);
+          box-shadow: 0 7px 0 rgba(0, 0, 0, 0.9);
+}
+
+.container__board__circles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
