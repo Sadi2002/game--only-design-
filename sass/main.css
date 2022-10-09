@@ -21,6 +21,7 @@ body {
           justify-content: center;
   background-color: #834cf2;
   font-family: sans-serif;
+  position: relative;
 }
 
 .button-header {
@@ -70,7 +71,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 40%;
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   background-color: #ececec;
   gap: 0.5rem;
   border-radius: 1.5rem;
@@ -101,6 +102,37 @@ body {
   margin-bottom: 0.5rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .board-circle {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    position: relative;
+  }
+  .player {
+    width: 25%;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .board-circle {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .board-circle {
+    width: 7.2rem;
+    height: 7.2rem;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .button-header {
     height: 4.5rem;
@@ -109,6 +141,10 @@ body {
   }
   .player {
     width: 25%;
+  }
+  .board-circle {
+    width: 9rem;
+    height: 9rem;
   }
 }
 
@@ -374,6 +410,17 @@ body {
   margin-bottom: 4rem;
 }
 
+@media screen and (min-width: 1200px) {
+  .container__players--1 {
+    position: absolute;
+    left: 0;
+  }
+  .container__players--2 {
+    position: absolute;
+    right: -25%;
+  }
+}
+
 .container__board {
   width: 100%;
   background-color: #ececec;
@@ -399,5 +446,244 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
+}
+
+@media screen and (min-width: 313px) {
+  .container__board {
+    width: 100%;
+    padding: 1rem 0.5rem 2.5rem;
+    height: 37.5rem;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .container__board {
+    width: 100%;
+    padding: 1rem 0.5rem 2.5rem;
+    height: 37rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .container__board {
+    width: 100%;
+    padding: 1rem 0.5rem 2.5rem;
+    height: 33rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .container__board {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .container__board {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .container__board {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .container__board {
+    width: 92%;
+  }
+}
+
+@media screen and (min-width: 434px) {
+  .container__board {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 443px) {
+  .container__board {
+    width: 87%;
+  }
+}
+
+@media screen and (min-width: 457px) {
+  .container__board {
+    width: 83%;
+  }
+}
+
+@media screen and (min-width: 476px) {
+  .container__board {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 494px) {
+  .container__board {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container__board {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 537px) {
+  .container__board {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 564px) {
+  .container__board {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 595px) {
+  .container__board {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .container__board {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 671px) {
+  .container__board {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 719px) {
+  .container__board {
+    width: 57%;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .container__board {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__board {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .container__board {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 861px) {
+  .container__board {
+    width: 52%;
+  }
+}
+
+@media screen and (min-width: 904px) {
+  .container__board {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 936px) {
+  .container__board {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container__board {
+    width: 70%;
+    height: 39rem;
+  }
+}
+
+@media screen and (min-width: 1064px) {
+  .container__board {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1135px) {
+  .container__board {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__board {
+    width: 70%;
+    height: 45rem;
+  }
+}
+
+@media screen and (min-width: 1227px) {
+  .container__board {
+    width: 65%;
+    height: 45rem;
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  .container__board {
+    width: 60%;
+    height: 45rem;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .container__board {
+    width: 70%;
+    height: 53rem;
+  }
+}
+
+@media screen and (min-width: 1423px) {
+  .container__board {
+    width: 65%;
+    height: 53rem;
+  }
+}
+
+@media screen and (min-width: 1521px) {
+  .container__board {
+    width: 60%;
+    height: 53rem;
+  }
+}
+
+@media screen and (min-width: 1636px) {
+  .container__board {
+    width: 55%;
+    height: 53rem;
+  }
+}
+
+@media screen and (min-width: 1772px) {
+  .container__board {
+    width: 50%;
+    height: 53rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container__board {
+    width: 80%;
+    height: 64rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

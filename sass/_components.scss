@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
   width: 40%;
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   background-color: rgb(236, 236, 236);
   gap: 0.5rem;
   border-radius: 1.5rem;
@@ -54,6 +54,34 @@
   margin-bottom: 0.5rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .board-circle {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    position: relative;
+  }
+  .player {
+    width: 25%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .board-circle {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media screen and (min-width: 1408px) {
+  .board-circle {
+    width: 7.2rem;
+    height: 7.2rem;
+  }
+}
 @media screen and (min-width: 1920px) {
   .button-header {
     height: 4.5rem;
@@ -63,5 +91,9 @@
 
   .player {
     width: 25%;
+  }
+  .board-circle {
+    width: 9rem;
+    height: 9rem;
   }
 }
