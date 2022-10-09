@@ -1,0 +1,42 @@
+.container {
+  &__timer {
+    width: 40%;
+    background-color: rgb(226, 80, 47);
+    height: 8rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.9);
+    border: 3px solid #000;
+
+    &-count {
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+
+    &::before {
+      content: "";
+      width: 80%;
+      height: 8rem;
+      background-color: rgb(226, 80, 47);
+      position: absolute;
+      border-radius: 2rem;
+      transform: rotate(225deg);
+      top: -30%;
+      left: 16%;
+      z-index: -100;
+      border: 3px solid #000;
+    }
+  }
+}

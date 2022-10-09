@@ -19,3 +19,13 @@
     right: -25%;
   }
 }
+@media screen and (min-width: 1920px) {
+  .container__players--1 {
+    position: absolute;
+    left: -10%;
+  }
+  .container__players--2 {
+    position: absolute;
+    right: -35%;
+  }
+}

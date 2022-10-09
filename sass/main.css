@@ -102,6 +102,14 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.board-circle:nth-child(20), .board-circle:nth-child(27), .board-circle:nth-child(34), .board-circle:nth-child(39), .board-circle:nth-child(40) {
+  background-color: #e6bc27;
+}
+
+.board-circle:nth-child(32), .board-circle:nth-child(33), .board-circle:nth-child(38), .board-circle:nth-child(41) {
+  background-color: #e2502f;
+}
+
 @media screen and (min-width: 1000px) {
   .board-circle {
     width: 5rem;
@@ -421,6 +429,17 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .container__players--1 {
+    position: absolute;
+    left: -10%;
+  }
+  .container__players--2 {
+    position: absolute;
+    right: -35%;
+  }
+}
+
 .container__board {
   width: 100%;
   background-color: #ececec;
@@ -428,8 +447,8 @@ body {
   height: 33rem;
   border-radius: 2rem;
   border: 3px solid #000;
-  -webkit-box-shadow: 0 7px 0 rgba(0, 0, 0, 0.9);
-          box-shadow: 0 7px 0 rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 10px 0 rgba(0, 0, 0, 0.9);
+          box-shadow: 0 10px 0 rgba(0, 0, 0, 0.9);
 }
 
 .container__board__circles {
@@ -446,6 +465,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 313px) {
@@ -685,5 +705,57 @@ body {
     width: 80%;
     height: 64rem;
   }
+}
+
+.container__timer {
+  width: 40%;
+  background-color: #e2502f;
+  height: 8rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 10px 0 rgba(0, 0, 0, 0.9);
+          box-shadow: 0 10px 0 rgba(0, 0, 0, 0.9);
+  border: 3px solid #000;
+}
+
+.container__timer-count {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.container__timer::before {
+  content: "";
+  width: 80%;
+  height: 8rem;
+  background-color: #e2502f;
+  position: absolute;
+  border-radius: 2rem;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  top: -30%;
+  left: 16%;
+  z-index: -100;
+  border: 3px solid #000;
 }
 /*# sourceMappingURL=main.css.map */

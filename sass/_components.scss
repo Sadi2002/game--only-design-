@@ -52,6 +52,21 @@
   border: 3px solid #000;
   box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.9);
   margin-bottom: 0.5rem;
+
+  &:nth-child(20),
+  &:nth-child(27),
+  &:nth-child(34),
+  &:nth-child(39),
+  &:nth-child(40) {
+    background-color: rgb(230, 188, 39);
+  }
+
+  &:nth-child(32),
+  &:nth-child(33),
+  &:nth-child(38),
+  &:nth-child(41) {
+    background-color: rgb(226, 80, 47);
+  }
 }
 
 @media screen and (min-width: 1000px) {
