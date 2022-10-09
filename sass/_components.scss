@@ -5,7 +5,7 @@
   background-color: rgb(98, 50, 195);
   border-radius: 2rem;
   width: 10rem;
-  height: 3.5rem;
+  height: 4rem;
   color: rgb(236, 236, 236);
   cursor: pointer;
   box-shadow: 3px 6px 0 rgba(0, 0, 0, 0.9);
@@ -20,10 +20,38 @@
   }
 }
 
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 1rem 3rem;
+  background-color: rgb(236, 236, 236);
+  gap: 0.5rem;
+  border-radius: 1.5rem;
+  border: 3px solid #000;
+  box-shadow: 0 7px 0 rgba(0, 0, 0, 0.9);
+
+  &__name {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  &__score {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .button-header {
     height: 4.5rem;
     width: 11rem;
     font-size: 1.6rem;
+  }
+
+  .player {
+    width: 25%;
   }
 }
